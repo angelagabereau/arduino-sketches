@@ -1,0 +1,126 @@
+HiveMind Bee API
+#########################
+
+
+
+Light On
+**************
+Turn on the color light to specified color.
+
+Command:  LIGHT_ON <ID> <R> <G> <B>
+
+Parameter | Description
+--------------------------------------
+ID 		  | The ID of the target Bee, integer
+R		  | The red value of RGB color, integer, 0-255
+G		  | The green value of RGB color, integer, 0-255
+B		  | The blue value of RGB color, integer, 0-255
+
+Return: OK
+
+
+
+Light Off
+**************
+Turn off the color light.
+(Amanda's notes mention a parameter- handle on or pulsing...not sure what this is about....)
+
+Command:  LIGHT_OFF <ID>
+
+Parameter | Description
+--------------------------------------
+ID 		  | The ID of the target Bee, integer
+
+Return: OK
+
+
+
+Shift Color
+**************
+Fade the color light to the specified color.
+(Amanda's notes state that this + speed could replace the cycle methods)
+
+Command:  SHIFT_COLOR <ID> <R> <G> <B>
+
+Parameter | Description
+--------------------------------------
+ID 		  | The ID of the target Bee, integer
+R		  | The red value of RGB color, integer, 0-255
+G		  | The green value of RGB color, integer, 0-255
+B		  | The blue value of RGB color, integer, 0-255
+
+Return: OK
+
+
+
+Start Cycle
+**************
+(Not sure what a cycle is in this instance.....)
+
+Command: START_CYCLE <ID> 
+
+Parameter | Description
+--------------------------------------
+ID 		  | The ID of the target Bee, integer
+
+Return: OK
+
+
+
+Stop Cycle
+**************
+(Not sure what a cycle is in this instance.....)
+
+Command: STOP_CYCLE <ID>
+
+Parameter | Description
+--------------------------------------
+ID 		  | The ID of the target Bee, integer
+
+Return: OK
+
+
+
+Pulse
+**************
+Pulse, or blink,  the color light.
+
+Command: PULSE <ID> <R> <G> <B>
+
+Parameter | Description
+--------------------------------------
+ID 		  | The ID of the target Bee, integer
+R		  | The red value of RGB color, integer, 0-255
+G		  | The green value of RGB color, integer, 0-255
+B		  | The blue value of RGB color, integer, 0-255
+
+Return: OK
+
+
+
+Display Text
+************
+Display the specified string in the Bee's display
+
+Command: DISPLAY_TEXT <ID> <STRING>
+
+Parameter | Description
+--------------------------------------
+ID 		  | The ID of the target Bee, integer
+TEXT	  | The string of text to display on Bee's display
+
+Return: OK
+
+
+
+Clear Display
+**************
+Clear any text from the Bee's display
+
+Command: CLEAR_DISPLAY <ID>
+
+Parameter | Description
+--------------------------------------
+ID 		  | The ID of the target Bee, integer
+
+Return: OK

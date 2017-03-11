@@ -1,0 +1,11 @@
+static const uint8_t EYE_PIN = 0;//The SquishyEye analog pin
+static const uint8_t R_PIN = 5;//The RED pin
+static const uint8_t G_PIN = 6;//The GREEN pin
+static const uint8_t B_PIN = 9;//The BLUE pin
+static const uint8_t TASK_PIN = 11;//The TASK LIGHT pin
+static const uint8_t MODULE_1_PIN = 11;//The Module 1 pin
+static const uint8_t MODULE_2_PIN = 11;//The Module 2 pin
+static const uint8_t CHATTER_SELECT_PIN = 4;//Chatter select pin
+static const uint8_t CHATTER_DETECT_PIN = 15;//Chatter detect pin
+static const uint8_t CHATTER_RX_PIN = 14;//Chatter RX pin
+static const uint8_t CHATTER_TX_PIN = 16;//Chatter TX pin

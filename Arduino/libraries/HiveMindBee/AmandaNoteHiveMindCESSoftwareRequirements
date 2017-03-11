@@ -1,0 +1,97 @@
+Amanda's Notes on HiveMind CES Software Requirements
+-----------------------------------------------------
+
+***************************************************
+
+Each Bee has software to do:
+It's ID number
+Parse Command
+Turn On (R, G, B)
+Start Cycle ()
+Stop Cycle ()
+Pulse (R, G, B)
+Turn Off (handle on or pulsing)
+Display String (String)
+Clear Display ()
+ShiftColor(R, G, B) <-- this + speed could replace the cycle methods.
+
+Flicker LEDs toy data  <-- eassiest for now is probably to just have an array of faked data on the arduino
+
+Queen has software to do:
+playNote()
+
+-----------------------
+
+Utility app
+
+- listen to mic
+- dump data to serial
+- dump that to file for later use
+
+
+***************************************************
+
+Processing App
+--------------
+
+Should be able to click through each event that needs to happen in the video, in order.
+
+Colored Lights
+--------------
+
+Bee1 on (any color)
+Bee2 on (" ")
+Bee3 on (" ")
+Bee3 color cycle (on/off or timed)
+
+Simple displays
+---------------
+
+Set display to "Dow Jones/ 17,573" and light to green  - Bee1 - off camera
+Set display to "Twitter/Notifications" and pulse blue - Bee2 - off camera
+Set display to "Temperature/10C", glow blue/purple - off camera
+Fade off Bee2  - on camera
+
+Simon
+------
+Trigger sequence of colored loghts and sound
+ Specifiy sequence
+ Subroutines by color
+ Bee  Queen
+ Red + A 		-- Bee1
+ Blue + E 		-- Bee2
+ Yellow + C#	-- Bee3
+ Green + low E 	-- Bee4
+
+ Step 1
+ Step 2
+ Step 3
+ Set all displays to "Simon"
+
+ All on camera.
+
+ ****************************************************
+
+ Reminders
+ ---------
+
+ Bee 1: pulse yellow, set display to "Eat Breakfast"
+ Bee 1: change to green, then fade out,
+ 		display reads "you ate breakfast"
+
+ Bee 2: pulse blue, set display to "Buy Coffee" - off camera
+ Bee 2: light and display fade out - on camera
+
+ Presence
+ --------
+
+ Bee 1, Bee 2: flicker red, set display to "RemotePresence"
+ Bee 1, Bee 2: pulse blue
+ 			   Clyde: pulse blue
+ Bee 1, Bee 2, Clyde: pulse teal
+
+
+
+
+
+
