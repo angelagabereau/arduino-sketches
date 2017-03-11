@@ -1,0 +1,98 @@
+Climobots Sense Base v1
+========================
+
+An Arduino UNO shield with multiple enviromental sensors and a SD card.
+Developed by Angela Gabereau at Santa Elena, Colombia
+
+-------
+Sensors
+-------
+
+
+GPS
+-------
+Pin 8, Digital, Software Serial TX
+Pin 9, Digital, Software Serial RX
+
+Adafruit GPD Breakout v3
+modules using MTK3329/MTK3339 driver 
+http://www.adafruit.com/products/746
+
+Library: Adafruit-GPS-Library
+
+Barometric Pressure
+-------
+Pin
+BMP180 Presure Sensor
+
+Library: Adafruit_BMP085_U
+
+Gas
+-------
+Pin 0, Analog
+
+n/a
+I used the gas sensor that Platohedro had.  
+I did not note the make/model
+
+
+Soil
+-------
+Pin 2, Analog
+
+Original: n/a
+I used the soil sensor that Platohedro had.  
+I did not note the make/model
+
+Current: Grove Moisture Sensor
+
+
+Sound
+-------
+Pin 3, Analog
+
+DFRobot Analog Sound Sensor V2
+
+
+
+Temperature & Humidity (DHT)
+-------
+Pin 2, Digital
+
+DFRobot Temperature & Humidity V2
+https://www.dfrobot.com/wiki/index.php/DHT11_Temperature_and_Humidity_Sensor_V2_SKU:_DFR0067
+
+Current: Adafruit DHT Library
+https://github.com/adafruit/DHT-sensor-library
+http://playground.arduino.cc/Main/DHTLib, contains basic info and alternatives
+
+Other options:
+Smaller Footprint, for just DHT11
+http://playground.arduino.cc/Main/DHT11Lib
+
+
+Light
+-------
+Pin 1, Analog
+
+Photo Resistor
+
+
+****
+TODO
+****
+
+-- Clean up and document SD Logger code.
+-- Develop a logging format.
+-- Allow a console logger mode in SDLogger code.
+-- Test each sensor with SDLogger in console mode.
+-- Test with SDLogger
+-- Review SDLogs obtained in Santa Elena.
+-- Construct Tree map with data from Santa Elena, if viable.
+
+-- Play with RGB leds
+-- Develop simple circuits for RGB LEDs with a Spark.
+-- Play with white fabric from Medellion
+
+
+
